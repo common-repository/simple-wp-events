@@ -1,0 +1,910 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+ :root {
+    --succes-color: #2ecc71;;
+    --error-color: #e74c3c;
+    --primary-color: #000;
+}
+
+.wpe-form-holder {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: unset;
+    margin: 0;
+}
+
+.wpe-subscribe-form-container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    width: 600px;
+    position: relative;
+    margin-bottom: 28px;
+}
+
+.wpe-subscribe-form-container .button {
+    width: 100% !important;
+}
+
+.wpe-subscribe-form {
+    padding: 50px 40px 55px;
+}
+
+.wpe-subscribe-form .wpe-form-control {
+    position: relative;
+}
+
+.wpe-subscribe-form .wpe-form-control label {
+    color: #777;
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.wpe-subscribe-form .wpe-form-control .wpe-field {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.wpe-subscribe-form .wpe-form-control input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.wpe-button {
+    cursor: pointer;
+    background: #fff;
+    color: #cd2653;
+    padding: 10px 15px;
+    border-radius: 4px;
+    display: inline-block;
+    font-weight: 700;
+    border: 1px solid;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+
+#wpe-button {
+    font-size: 18px;
+    display: inherit;
+    margin: 0 auto;
+}
+
+.wpe-button:hover {
+    background: #cd2653;
+    color: #fff;
+    opacity: 0.9;
+    text-decoration: none;
+}
+
+.wpe-h2 {
+    text-align: center;
+    margin: 0 0 20px;
+    font-size: 1.5em;
+}
+
+.wpevents-container {
+    max-width: 1260px;
+    width: 100%;
+    margin: 0 auto 28px;
+    padding: 10px 20px;
+}
+
+.wpe-row {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 16px;
+    font-size: 15px;
+    align-items: flex-start;
+}
+
+.wpe-select-view span {
+    margin-left: 2px;
+}
+
+@keyframes bounceAround {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.wpevents-container .wpe-select-view {
+    flex: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.wpevents-container .current-menu-item span {
+    text-decoration: underline;
+}
+
+.tooltipevent{
+    width: 300px;
+    background: var(--primary-color);
+    position: absolute;
+    z-index: 10001;
+    transform: translate3d(-50%,-100%,0);
+    font-size: 0.8rem;
+    box-shadow: 1px 1px 3px 0px #888888;
+    line-height: 1rem;
+}
+
+.tooltipevent div{
+    padding: 10px;
+    color: White;
+    background-color: var(--primary-color);
+    position: relative;
+}
+
+.tooltipevent div:last-child::after, .tooltipevent div:last-child::before{
+    width: 0;
+    height: 0;
+    border: solid 5px transparent;/*
+    box-shadow: 1px 1px 2px 0px #888888;*/
+    border-bottom: 0;
+    border-top-color: var(--primary-color);
+    position: absolute;
+    display: block;
+    content: "";
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tooltipevent div:last-child::before{
+    border-top-color: #888888;
+    bottom: -5px;
+}
+
+body .fc-button-group button:hover, 
+body .fc-button-group button:active, 
+body .fc-button-group button:focus {
+    background: var(--primary-color);
+    color: #fff;
+    border-width: 1px;
+}
+
+body .fc-button-group button {
+    color: var(--primary-color);
+}
+
+.wpe-col-dd {
+    padding: 10px 25px;
+    background: #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+.wpe-col-event span {
+    display: block;
+}
+
+span.wpe-location {
+    display: inline;
+}
+
+/* .wpevents-shortcode-section .wpe-venue .wpe-location {
+    display: inline;
+} */
+
+.wpe-archive-buttons span {
+    display: inline-block;
+}
+
+.wpe-event-duration-date,
+.wpe-duration-time,
+.wpe-type,
+.wpe-terms,
+.wpe-location
+{
+    margin-bottom: 7px;
+}
+
+.wpe-excerpt {
+    margin: 0 0 16px;
+}
+
+.wpe-col-event .wpe-title,
+body .wpe-event .entry-title a {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-transform: capitalize;
+}
+
+.wpe-archive-shortcode .wpe-location span {
+    display: inline-block;
+}
+
+.wpe-col-dd span {
+    display: block;
+    text-align: center;
+}
+
+.wpe-full-wrap {
+    background: #fff;
+}
+
+.wpe-divider {
+    margin: 40px auto;
+    border-top: 1px solid #333;
+}
+
+.wpe-template-title {
+    font-size: 36px;
+    margin: 0 0 40px;
+}
+
+.wpe-col-dd .wpe-col-day {
+    font-size: 18px;
+    word-break: initial;
+}
+
+.wpe-col-dd .wpe-col-date {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.wpe-single-title {
+    font-size: 36px;
+    margin: 0 0 40px;
+}
+
+.wpe-single-content span {
+    display: block;
+    margin-bottom: 16px;
+}
+
+.wpe-field-container {
+    margin-bottom: 16px;
+}
+
+.wpe-full-width {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+}
+
+#hear_about_us {
+    width: 100%;
+    max-width: 100%;
+}
+
+#wpe_privacy_policy {
+    height: 150px;
+}
+
+.wpe-submit-button {
+    width: 100%;
+}
+
+.wpe-main-form-holder {
+    margin-top: 50px;
+}
+
+.thankyou-popup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    background: rgba(0, 0, 0, .5); 
+}
+
+.t-y-inner {
+    position: absolute;
+    max-width: 600px;
+    width: 100%;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span.wpe-close-popup {
+    float: right;
+    cursor: pointer;
+}
+
+.wpe-dark-mode span.wpe-close-popup {
+    color: #fff;
+}
+
+.read-more-link:hover {
+    text-decoration: underline;
+}
+
+.read-more-link {
+    font-size: 12px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.wpe-address span {
+    display: inline-block;
+}
+
+.wpe-banner-image {
+    margin-bottom: 30px;
+}
+
+.wpe-banner-image img {
+    height: 350px;
+}
+
+li.wpe-calendar-list {
+    display: inline-block;
+    position: relative;
+    margin-left: 0;
+    padding-bottom: 8px;
+}
+
+.wpe-calendar-ul {
+    margin-left: 0;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+li.wpe-calendar-list a {
+    text-decoration: none;
+}
+
+li.wpe-calendar-list:hover .wpe-calendar-sublist {
+    display: block;
+}
+
+ul.wpe-calendar-sublist {
+    z-index: 1;
+    display: none;
+    position: absolute;
+    top: 22px;
+    left: 0;
+    list-style: none;
+    width: 200px;
+    margin-left: 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .2);
+    background: #fff;
+}
+
+ul.wpe-calendar-sublist li {
+    margin-left: 0;
+    padding: 8px 16px;
+    margin-top: 0;
+}
+
+ul.wpe-calendar-sublist li:hover {
+    background: #333;
+}
+
+ul.wpe-calendar-sublist li:hover a {
+    color: #fff;
+}
+
+.wpe-calendar-sublist a {
+    font-size: 16px;
+}
+
+.wpe-add-to-calendar {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.gmap-button {
+    margin-right: 20px;
+}
+
+.wpe-description {
+    margin-top: 10px;
+}
+
+span.wpe-category {
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+span.wpe-category a:hover {
+    text-decoration: underline;
+}
+
+span.wpe-category a {
+    text-decoration: none;
+}
+
+.wpe-full-width select {
+    width: 100%;
+    padding: 12px;
+}
+
+.wpe-col-inner .wpe-event-duration,
+.wpe-col-inner .wpe-duration-date {
+    margin-bottom: 7px;
+}
+
+.wpevents-section {
+    text-align: center;
+}
+
+.wpevents-section strong.wpe-main-title {
+    font-size: 42px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.wpevent-archive-button {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.wpevents-section .wpevent-main {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.wpevents-section .wpevent-main .wpevent-card {
+    width: 30%;
+    background: #ccc;
+    padding: 30px;
+    text-align: left;
+}
+
+p.wpe-single-event-title {
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+p.wpe-single-event-title a {
+    text-decoration: none;
+}
+
+.wpe-single-event-title a:hover {
+    text-decoration: underline !important;
+}
+
+.wpe-pagination {
+    flex: 100%;
+    text-align: center;
+}
+
+.archive-pagination.pagination ul li {
+    list-style: none;
+    padding: 0 7px;
+}
+
+.archive-pagination.pagination ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+}
+
+.wpe-register-form-container {
+    position: relative;
+}
+
+.wpe-register-form-container input,
+.wpe-register-form-container select,
+.wpe-subscribe-form-container input,
+.wpe-subscribe-form-container select {
+    border: 1px solid #ddd;
+}
+
+.wpe-form-control input {
+    margin: 0 0px;
+}
+
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea {
+    width: 100%;
+}
+
+.wpevents-container .wpe-description ul {
+    margin-bottom: 28px;
+    margin-left: 40px;
+}
+
+.wpevents-container .wpe-description ul li {
+    list-style-type: disc;
+}
+
+.wpe-event ul, .wpe-event ol {
+    margin-left: 40px;
+}
+
+.single-wp_events ul.wpe-calendar-sublist {
+    margin-left: 0;
+}
+
+.wpe-event li {
+    list-style-type: inherit;
+}
+
+.wpevents-container .wpe-single-top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.wpevents-container .wpe-event-thumbnail {
+    width: 53%;
+}
+
+.wpevents-container .wpe-single-content {
+    background: #eee;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 28px;
+    width: 43%;
+}
+
+.wpevents-container .wpe-full-content {
+    width: 100%;
+}
+
+span.wpe-address span {
+    margin-bottom: 0;
+}
+
+.wpe-form-description {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+
+.wpe-form-control.error small {
+    display: block;
+}
+
+
+.wpe-form-control {
+    margin-bottom: 16px;
+}
+
+.ics-text, .filename {
+    display: none;
+}
+
+#download-ics {
+    cursor: pointer;
+}
+
+span.wpe-detail-button,
+.wpe-detail-button{
+    margin-top: 10px;
+    background: #ccc;
+    width: fit-content;
+    padding: 5px 30px 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: 500;
+    position: relative;
+    color: #333;
+}
+
+span.wpe-detail-button:after {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    font-size: 20px;
+    line-height: 1;
+    content: "\f347";
+    font-family: dashicons;
+    transition: 0.2s;
+    transform: translateY(-50%) rotate(0deg);
+}
+
+span.wpe-detail-button.wpe-active:after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.wpe-display-none {
+    display: none;
+}
+
+.wpe-archive-content {
+    padding-top: 20px;
+}
+
+.wpe-button-loader {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    display: none;
+}
+
+.wpe-button-loader:after {
+    border: 8px solid #ddd;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spinloadwp 2s linear infinite;
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+}
+
+.wpe-archive-description,
+.wpe-archive-registration
+{
+    max-width: fit-content;
+    display: inline-block;
+}
+
+.wpe-reg-button {
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+body .wpe-col-event {
+    width: 100%;
+}
+
+body .wpe-full-wd {
+    max-width: 100%;
+    width: 100%;
+}
+
+.g-recaptcha {
+    margin-bottom: 20px;
+}
+
+span.g-recaptcha {
+    display: none;
+}
+
+/* updated-css */
+
+.wpe-register-form-container .wpe-col-2 , .wpe-subscribe-form .wpe-col-2 {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 16px;
+}
+
+.wpe-display-block .wpe-subscribe-form .wpe-col-2 {
+	display: block;
+}
+
+.wpe-register-form-container .wpe-col-2 div , .wpe-subscribe-form .wpe-col-2 div{
+    flex: 50%;
+	width:50%;
+}
+
+.wpe-register-form-container .wpe-col-3{
+	display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 16px;
+}
+
+.wpe-register-form-container .wpe-col-3 div {
+    flex: 33.33%;
+}
+
+.wpe-subscribe-form .wpe-col-2 div:last-child {
+    padding-right: 0px;
+}
+
+.wpe-register-form-container .wpe-col-2 div:last-child{
+    padding-right: 0px;
+}
+
+.wpe-register-form-container .wpe-col-3 div:last-child {
+    padding-right: 0px;
+}
+
+body ul.wpe-calendar-sublist{
+	top: 25px;
+}
+
+.wpe-texting-permission {
+    display: flex;
+    font-size: 12px;
+    font-weight: 600;
+    justify-content: start;
+}
+
+.wpe-texting-permission label {
+    margin-left: 10px;
+    margin-top: -3px;
+}
+
+.wpe-row.calendar + hr,
+.wpe-row.calendar {
+    display: none;
+}
+
+.fc-row:first-child table {
+    margin-bottom: 0;
+}
+
+body .wpe-event span.fc-title {
+    color: black;
+}
+
+body .wpe-dark-mode .wpe-event span.fc-title {
+    color: #fff;
+}
+
+.wpe-col-img {
+    text-align: center;
+    background: #d6d6d6;
+    overflow: hidden;
+}
+
+.wpe-col-img img {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+}
+
+body .wpe-event .dashicons, .dashicons-before:before {
+    text-decoration: none;
+}
+
+body .wpe-event .wpe-active-view .dashicons {
+    text-decoration: underline;
+}
+
+body .fc-event {
+    text-align: center;
+    font-size: 12px;
+}
+
+body .content .entry .wpe-event img {
+    border: none;
+    box-shadow: none;
+}
+
+/* updated-css-end */
+
+@keyframes spinloadwp {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.form-flex {
+    width: 100%;
+}
+
+.wpe-past-event-msg,
+.wpe-close-reg-msg {
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/*===========================================
+               DARK MODE
+============================================*/
+
+.wpe-dark-mode,
+.wpe-dark-mode .wpe-calendar-sublist li:hover {
+    background-color: #121016;
+}
+
+.wpe-dark-mode-text, .wpe-dark-mode-text a,
+.wpe-dark-mode h1,
+.wpe-event .entry-title .wpe-dark-mode-text,
+.wpe-dark-mode ::placeholder,
+.wpe-dark-mode span.dashicons,
+.wpe-dark-mode .fc-button:hover .fc-icon {
+    color: #fff;
+}
+
+.wpe-dark-mode .wpe-reg-button,
+.wpe-dark-mode .wpe-col-dd,
+.wpe-dark-mode .wpe-button {
+    color: #333;
+}
+
+.wpe-dark-mode .wpevents-container .wpe-single-content,
+.wpe-dark-mode .t-y-inner,
+.wpe-dark-mode li.wpe-calendar-list:hover .wpe-calendar-sublist,
+.wpe-dark-mode .fc-unthemed td.fc-today {
+    background: #333;
+}
+
+body .wpe-dark-mode .wpe-form-control select, 
+body .wpe-dark-mode .wpe-form-control .wpe-field,
+body .wpe-dark-mode .wpe-subscribe-form-container input {
+    background-color: #333;
+    color: #fff;
+}
+
+.wpe-dark-mode .wpe-subscribe-form-container {
+    background-color: #121016;
+    border: 1px solid #fff;
+}
+
+.wpe-dark-mode .wpe-grid .wpe-row {
+    border: 1px solid #fff;
+}
+
+.wpe-dark-mode .fc-icon,
+.wpe-dark-mode button:not(:hover):not(:active):not(.has-text-color) {
+    color: #000 !important;
+}
+
+.wpe-full-width.wpe-guests-heading {
+    text-align: center;
+    font-weight: 700;
+    font-style: italic;
+}
+/*===========================================
+                Media Queries
+============================================*/
+
+@media only screen and (max-width: 811px) {
+    .wpe-left-third, .wpe-middle-third, .wpe-right-third,
+    .wpe-left-half, .wpe-right-half {
+        max-width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body .wpe-event .archive-pagination li a{
+        margin-bottom:10px;
+    }
+    body .archive-pagination.pagination ul {
+        display: block !important;
+        text-align: center !important;
+        margin-left: 0;
+    }
+	/* updated-css */
+	.wpe-register-form-container .wpe-col-2 , .wpe-col-3 , .wpe-subscribe-form .wpe-col-2{
+        flex-direction:column;
+    }
+	.wpe-register-form-container .wpe-col-2 div , .wpe-col-3 div , .wpe-subscribe-form .wpe-col-2 div {
+        flex: 100%;
+        width: 100%;
+    }
+	.wpe-register-form-container .wpe-col-2 div:first-child , .wpe-subscribe-form .wpe-col-2 div:first-child {
+        padding-right: 0;
+    }
+	.wpe-register-form-container .wpe-col-3 div{padding-right:0px;}
+
+    body .wpe-event .fc-toolbar .fc-left,
+    body .wpe-event .fc-toolbar .fc-center,
+    body .wpe-event .fc-toolbar .fc-right {
+        float: none;
+        display: inline-block;
+        clear: both;
+    }
+
+    .fc-scroller.fc-day-grid-container {
+        height: auto !important;
+    }
+	/* updated-css-end */
+}
